@@ -20,8 +20,8 @@ const Navbar = () => {
                         <li key={nav.id}
                             className={` font-poppins border-b-2 xs:items-center font-bold coursor-pointer text-[16px] mx-4 flex flex-row text-black ${active === index.title ? "text-white" : "text-dimWhite"} ${index === navLinks.length - 1 ? "mr-0" : "mr-6"}`}
                             onClick={() => setActive(nav.title)}>
-                            <img src={nav.img} alt="img" className="w-[24px] h-[24px] mx-3 my-5" />
-                            <a href={`#${nav.id}`} className="text-black items-center py-5 ">{nav.title}</a>
+
+                            <a href={`#${nav.id}`} className="text-black flex flex-row items-center py-5 "><img src={nav.img} alt="img" className="w-[24px] h-[24px] mx-3 my-5" />{nav.title}</a>
 
                         </li>
 
