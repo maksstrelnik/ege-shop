@@ -57,3 +57,27 @@ export const humburgerNav =[
     }
 
 ]
+
+// export const category =[
+//     {
+//         id:"catalog",
+//         title:"Каталог"
+//     },
+//     {
+//         id:"building",
+//         title:"Стройматериалы"
+//     },
+//     {
+//         id:"tools",
+//         title:"Инструменты"
+//     },
+//     {
+//         id:"electric",
+//         title:"Электрика"
+//     },
+//     {
+//         id:"interior",
+//         title:"Интерьер и отдых"
+//     }
+
+// ]

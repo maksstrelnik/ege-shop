@@ -11,6 +11,9 @@ import interior from "./interior.png"
 import tools from "./tools.png"
 import electric from "./electric.png"
 import building from "./building.png"
+import catalogMenu from "./catalogMenu.png"
+import catalogClose from "./catalogClose.png"
+import mapPin from "./map-pin.png"
 
 export{
     logo,
@@ -25,5 +28,8 @@ export{
     interior,
     electric,
     tools,
-    building
+    building,
+    catalogMenu,
+    catalogClose,
+    mapPin
 }

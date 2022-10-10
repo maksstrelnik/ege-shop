@@ -12,16 +12,19 @@ const Navbar = () => {
 
 
     return(
-         <nav className="w-full h-[80px] bg-grey flex justify-between items-center">
-            <div className={`${!toggle ? "hidden" : "flex"} sm:hidden w-full left-0 top-20 absolute xs:justify-center`}>
+         <nav className={`${styles.paddingX} w-full h-[80px] bg-grey flex justify-between items-center flex-row bg-primary`}>
+            <div className={`${!toggle ? "hidden" : "flex"} md:hidden w-full left-0 top-20 absolute xs:justify-center z-10 bg-white`}>
                 <ul className="flex flex-col text-black w-full">
-                    {humburgerNav.map((nav,index,image)=>(
+                    {humburgerNav.map((nav,index)=>(
                         <>
                         <li key={nav.id}
                             className={` font-poppins border-b-2 xs:items-center font-bold coursor-pointer text-[16px] mx-4 flex flex-row text-black ${active === index.title ? "text-white" : "text-dimWhite"} ${index === navLinks.length - 1 ? "mr-0" : "mr-6"}`}
                             onClick={() => setActive(nav.title)}>
 
-                            <a href={`#${nav.id}`} className="text-black flex flex-row items-center py-5 "><img src={nav.img} alt="img" className="w-[24px] h-[24px] mx-3 my-5" />{nav.title}</a>
+                            <a href={`#${nav.id}`} className="w-full text-black flex flex-row items-center py-5 ">
+                                <img src={nav.img} alt="img" className="w-[24px] h-[24px] mx-3 my-5" />
+                                {nav.title}
+                            </a>
 
                         </li>
 
@@ -32,7 +35,7 @@ const Navbar = () => {
 
             </div>
 
-            <div className="sm:hidden flex">
+            <div className="md:hidden flex cursor-pointer">
                 <img
                     src={toggle ? close : menu}
                     alt="menu"
@@ -48,17 +51,17 @@ const Navbar = () => {
 
 
 
-             <ul className="flex-1 flex items-center justify-start sm:flex hidden">
+             <ul className="flex-1 flex items-center justify-start md:flex hidden">
                  {navLinks.map((nav,index)=>(
                      <li key={nav.id}
-                     className={`font-poppins font-normal coursor-pointer text-[16px] ${active===index.title ? "text-white" : "text-dimWhite"} ${index===navLinks.length-1 ? "mr-0" : "mr-6"}`}
+                     className={`font-poppins font-normal coursor-pointer text-[16px] ${active===index.title ? "text-white" : "text-dimWhite"} ${index === navLinks.length - 1 ? "mr-0" : "mr-10"} `}
                      onClick={()=>setActive(nav.title)}>
                          <a href={`#${nav.id}`}>{nav.title}</a>
                      </li>
                  ))}
              </ul>
 
-             <div className={`${styles.paragraph} sm:flex hidden items-center`} >
+             <div className={`${styles.paragraph} md:flex hidden items-center`} >
                 <div className="flex flex-row">
                     <img src={phone} alt="phone" className="mr-2"/>
                     <p>+7 (965) 084-29-29</p>
@@ -67,11 +70,12 @@ const Navbar = () => {
                 <CartBtn children="Пусто" />
              </div>
              <div>
-                <img src={cart} alt="cart" className="sm:hidden flex"/>
+                <img src={cart} alt="cart" className="md:hidden flex"/>
              </div>
 
-
          </nav>
+
+
 
 )}
 
