@@ -54,30 +54,153 @@ export const humburgerNav =[
         id:"interior",
         img:interior,
         title:"Интерьер и отдых"
-    }
+    },
 
 ]
 
-// export const category =[
-//     {
-//         id:"catalog",
-//         title:"Каталог"
-//     },
-//     {
-//         id:"building",
-//         title:"Стройматериалы"
-//     },
-//     {
-//         id:"tools",
-//         title:"Инструменты"
-//     },
-//     {
-//         id:"electric",
-//         title:"Электрика"
-//     },
-//     {
-//         id:"interior",
-//         title:"Интерьер и отдых"
-//     }
+export const categoryContent=[
+    {
+        id: "Emali",
+        title:"Эмали",
+        subcategories:[
+            {
+                id:1,
+                title: "Подкатегория",
+            },
+            {
+                id:1,
+                title: "Подкатегория",
+            },
+            {
+                id:1,
+                title: "Подкатегория",
+            },
+        ]
 
-// ]
+    },
+    {
+        id: "Stairs",
+        title:"Лестницы",
+        subcategories:[
+            {
+                id:1,
+                title: "Подкатегория",
+            },
+            {
+                id:1,
+                title: "Подкатегория",
+            },
+            {
+                id:1,
+                title: "Подкатегория",
+            },
+        ]
+
+    },
+    {
+        id: "HouseholdGoods",
+        title:"Хозяйственные товары",
+        subcategories:[
+            {
+                id:1,
+                title: "Подкатегория",
+            },
+            {
+                id:1,
+                title: "Подкатегория",
+            },
+            {
+                id:1,
+                title: "Подкатегория",
+            },
+        ]
+
+    },
+]
+
+export const categoryTools=[
+    {
+        id: "Emali",
+        title:"Измерительные товары",
+        subcategories:[
+            {
+                id:1,
+                title: "Подкатегория",
+            },
+            {
+                id:1,
+                title: "Подкатегория",
+            },
+            {
+                id:1,
+                title: "Подкатегория",
+            },
+        ]
+
+    },
+    {
+        id: "Stairs",
+        title:"Металлорежущие инструменты, станки для арматуры",
+        subcategories:[
+            {
+                id:1,
+                title: "Подкатегория",
+            },
+            {
+                id:1,
+                title: "Подкатегория",
+            },
+            {
+                id:1,
+                title: "Подкатегория",
+            },
+        ]
+
+    },
+    {
+        id: "HouseholdGoods",
+        title:"Строительный отделочный инструмент ",
+        subcategories:[
+            {
+                id:1,
+                title: "Подкатегория",
+            },
+            {
+                id:1,
+                title: "Подкатегория",
+            }
+        ]
+
+    },
+    {
+        id: "HouseholdGoods",
+        title:"Строительный отделочный инструмент ",
+        subcategories:[
+            {
+                id:1,
+                title: "Подкатегория",
+            },
+            {
+                id:1,
+                title: "Подкатегория",
+            }
+        ]
+
+    },
+    {
+        id: "HouseholdGoods",
+        title:"Строительный отделочный инструмент ",
+        subcategories:[
+            {
+                id:1,
+                title: "Подкатегория",
+            },
+            {
+                id:1,
+                title: "Подкатегория",
+            }
+        ]
+
+    },
+]
+

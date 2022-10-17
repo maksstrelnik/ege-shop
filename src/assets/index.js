@@ -14,6 +14,9 @@ import building from "./building.png"
 import catalogMenu from "./catalogMenu.png"
 import catalogClose from "./catalogClose.png"
 import mapPin from "./map-pin.png"
+import banner from "./banner.png"
+import smBanner from "./smBanner.png"
+import search from "./search.png"
 
 export{
     logo,
@@ -31,5 +34,8 @@ export{
     building,
     catalogMenu,
     catalogClose,
-    mapPin
+    mapPin,
+    banner,
+    smBanner,
+    search
 }

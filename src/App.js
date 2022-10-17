@@ -1,7 +1,8 @@
 import React from 'react'
-import { Navbar, CategoryBar}  from './components/index'
+import { Navbar, CategoryBar, MainImg}  from './components/index'
 import './index.css'
 import styles from './style'
+import TabItem from './components/BuildCateg';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <div className={`${styles.boxWidth}`}>
           <Navbar />
           <CategoryBar/>
+          <MainImg />
         </div>
       </div>
     </div>

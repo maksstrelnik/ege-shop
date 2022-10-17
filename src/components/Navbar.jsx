@@ -1,5 +1,5 @@
 import React from 'react'
-import { logo, phone, heart, close, menu, cart } from "../assets"
+import { logo, phone, heart, close, menu, cart,mapPin } from "../assets"
 import { navLinks, humburgerNav } from "../constants"
 import styles from '../style'
 import { useState } from "react"
@@ -13,29 +13,30 @@ const Navbar = () => {
 
     return(
          <nav className={`${styles.paddingX} w-full h-[80px] bg-grey flex justify-between items-center flex-row bg-primary`}>
-            <div className={`${!toggle ? "hidden" : "flex"} md:hidden w-full left-0 top-20 absolute xs:justify-center z-10 bg-white`}>
-                <ul className="flex flex-col text-black w-full">
+            <div className={`${!toggle ? "hidden" : "flex"} flex flex-col md:hidden w-full h-screen left-0 sm:top-20 top-20 absolute xs:justify-left z-10 bg-white`}>
+            <div className={`${styles.paddingX} flex flex-row mt-4 items-center md:hidden flex`}>
+                    <img src={mapPin} alt="mapPin" className="w-[12px] h-[12px] mr-1"/>
+                    <p className="font-inter text-black sm:text-[16px] text-[14px] font-normal ">Москва</p>
+                </div>
+                <ul className="flex flex-col text-black w-full ">
                     {humburgerNav.map((nav,index)=>(
                         <>
                         <li key={nav.id}
-                            className={` font-poppins border-b-2 xs:items-center font-bold coursor-pointer text-[16px] mx-4 flex flex-row text-black ${active === index.title ? "text-white" : "text-dimWhite"} ${index === navLinks.length - 1 ? "mr-0" : "mr-6"}`}
+                            className={` ${styles.paddingX} font-poppins border-b-2 xs:items-center font-bold coursor-pointer text-[16px] flex flex-row text-black ${active === index.title ? "text-white" : "text-dimWhite"} ${index === navLinks.length - 1 ? "mr-0" : "mr-6"}`}
                             onClick={() => setActive(nav.title)}>
 
-                            <a href={`#${nav.id}`} className="w-full text-black flex flex-row items-center py-5 ">
+                            <a href={`#${nav.id}`} className=" text-black flex flex-row justify-left items-center py-5 ">
                                 <img src={nav.img} alt="img" className="w-[24px] h-[24px] mx-3 my-5" />
                                 {nav.title}
                             </a>
-
                         </li>
-
                         </>
                      ))}
-
                 </ul>
-
             </div>
 
             <div className="md:hidden flex cursor-pointer">
+
                 <img
                     src={toggle ? close : menu}
                     alt="menu"

@@ -1,7 +1,10 @@
-import { humburgerNav } from "../constants"
+import { humburgerNav, categoryContent } from "../constants"
 import { catalogClose, catalogMenu, mapPin } from "../assets"
 import { useState } from "react"
 import styles from '../style'
+import CatalogTabs from "./CatalogTabs"
+import Input from "./UI/Input"
+
 
 const CategoryBar = () => {
     const [active, setActive] = useState("Home");
@@ -11,17 +14,22 @@ const CategoryBar = () => {
 
 
 
-    <div className={`flex flex-row items-center bg-amber-400 w-full h-[48px] left-0  ${styles.paddingX}`}>
-        <p className="flex flex-row items-center font-poppins coursor-pointer text-[16px] sm:flex hidden ">
-        <img
-            src={toggle ? catalogClose : catalogMenu}
-            alt="menu"
-            className="w-[28px] h-[28px] object-contain flex justify-end mr-2.5 items-center"
-            onClick={() => setToggle(!toggle)}
-        />
-            Каталог
-        </p>
+    <div className={`flex flex-row items-center bg-amber-400 w-full h-[48px] left-0  ${styles.paddingX}`}
+    >
 
+        <div className={`${!toggle ? "hidden" : "flex"} flex flex-row  w-full left-0 top-32 absolute md:justify-start z-10 bg-white`}>
+            <CatalogTabs />
+        </div>
+
+        <div className="flex flex-row items-center font-poppins mr-6 cursor-pointer text-[16px] md:flex hidden ">
+            <img
+                src={toggle ? catalogClose : catalogMenu}
+                alt="menu"
+                className="w-[28px] h-[28px] object-contain sm:flex hidden justify-end coursor-pointer mr-2.5 items-center"
+                onClick={() => setToggle(!toggle)}
+            />
+            <p className={`${toggle ? catalogClose : catalogMenu} coursor-pointer `} onClick={() => setToggle(!toggle)} >Каталог </p>
+        </div>
 
       <ul className="flex flex-row text-black w-full md:flex hidden">
                     {humburgerNav.map((nav,index)=>(
@@ -38,14 +46,14 @@ const CategoryBar = () => {
                         </>
                      ))}
         </ul>
-
-        <form className="flex flex-row mr-[24px] md:justify-center">
-            <input type="text" name="text" placeholder="Поиск, например Круг зачистной " className=" border-[#3C3C3B] bg-amber-400 border-b-2 w-[400px]" />
-        </form>
-        <div className="flex flex-row items-center text-white">
-            <img src={mapPin} alt="location" className="w-[12px] h-[12px] mr-[4px]" />
-            <p alssName="font-poppins font-normal ">Москва</p>
+        <div className="flex md:justify-right justify-center ">
+            <Input />
+            <div className="flex flex-row items-center sm:flex hidden md:justify-center justify-end">
+                <img src={mapPin} alt="mapPin" className="w-[12px] h-[12px] mr-1"/>
+                <p className="font-inter text-white font-[14px] font-normal ">Москва</p>
+            </div>
         </div>
+
 
 
     </div>
