@@ -9,7 +9,6 @@ import ToolsCateg from './ToolsCateg';
 
 const CatalogTabs = () => {
   const [active, setActive] = useState("");
-    const [toggle, setToggle] = useState(false)
   return (
     <div className={`flex left-0`}>
       <Tabs className={` flex`}>

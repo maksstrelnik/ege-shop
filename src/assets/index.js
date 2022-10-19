@@ -17,6 +17,8 @@ import mapPin from "./map-pin.png"
 import banner from "./banner.png"
 import smBanner from "./smBanner.png"
 import search from "./search.png"
+import popItem from "./pop_item.png"
+import procent from "./procent.png"
 
 export{
     logo,
@@ -37,5 +39,7 @@ export{
     mapPin,
     banner,
     smBanner,
-    search
+    search,
+    popItem,
+    procent
 }

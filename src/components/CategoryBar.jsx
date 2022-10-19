@@ -49,8 +49,11 @@ const CategoryBar = () => {
         <div className="flex md:justify-right justify-center ">
             <Input />
             <div className="flex flex-row items-center sm:flex hidden md:justify-center justify-end">
-                <img src={mapPin} alt="mapPin" className="w-[12px] h-[12px] mr-1"/>
-                <p className="font-inter text-white font-[14px] font-normal ">Москва</p>
+                <a href="#" className=" flex flex-row items-center sm:flex hidden md:justify-center justify-end">
+                    <img src={mapPin} alt="mapPin" className="w-[12px] h-[12px] mr-1"/>
+                    <p className="font-inter text-white font-[14px] font-normal ">Москва</p>
+                </a>
+
             </div>
         </div>
 
