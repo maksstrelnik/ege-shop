@@ -68,7 +68,7 @@ const Navbar = () => {
                     <p>+7 (965) 084-29-29</p>
                 </div>
                 <img src={heart} alt="heart" className="mx-10" />
-                <CartBtn children="Пусто" />
+                <CartBtn img={cart} text="Пусто"  />
              </div>
              <div>
                 <img src={cart} alt="cart" className="md:hidden flex"/>

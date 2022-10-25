@@ -29,7 +29,7 @@ const Slider = () => {
   return (
     <div className={`${styles.paddingX} mt-14 mb-8`}>
         <h1>Популярные товары</h1>
-      <Carousel responsive={responsive} className="">
+      <Carousel autoPlaySpeed={1000}  responsive={responsive} className="">
         <Item />
         <Item />
         <Item />

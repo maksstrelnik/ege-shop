@@ -16,10 +16,8 @@ code {
     monospace;
 }
 
-.react-multiple-carousel__arrow {
-
-  background: rgba(252, 250, 250, 1);
-
+.react-multiple-carousel__arrow--left {
+  left: 0;
 }
 .react-multiple-carousel__arrow--left{
   background: rgb(7, 7, 7);

@@ -4,6 +4,8 @@ import CategoryBar from "./CategoryBar"
 import MainImg from "./MainImg"
 import Benefits from "./Benefits"
 import Slider from "./Slider";
+import Button from "../components/UI/Button";
+import Count from "./Count"
 
 
 
@@ -13,6 +15,8 @@ export {
     CategoryBar,
     MainImg,
     Benefits,
-    Slider
+    Slider,
+    Button,
+    Count
 }
 

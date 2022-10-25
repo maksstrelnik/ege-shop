@@ -13,6 +13,7 @@ function App() {
           <MainImg />
           <Benefits />
           <Slider />
+          <Benefits />
         </div>
       </div>
     </div>
