@@ -6,13 +6,13 @@ import Count from './Count'
 
 const Item = () => {
   return (
-    <div className="border-2 h-[530px] w-[300px] ">
-        <div className='z-10 flex flex-row justify-between  items-center  mt-[27px] mx-[27px]'>
-            <a href="#" className='w-[54px] h-[40px]  bg-rose-500 text-white  rounded-full '><span className="py-2.5 px-5">%</span></a>
-            <img src={heart} alt="favorites" className="flex justify-self-end" />
+    <div className="border-2 h-[450px] w-[300px] ">
+        <div className='z-10 flex flex-row justify-between items-center  mt-[27px] mx-[27px]  '>
+            <a href="#" className='w-[54px] h-[39px]  bg-rose-500 text-white  rounded-full '><span className="  py-1.5 px-5 flex item-center">%</span></a>
+            <img src={heart} alt="favorites" className=" " />
 
         </div>
-        <div className="flex justify-center ">
+        <div className="flex justify-center h-[180px]">
            <img src={popItem} alt="pop" className=""/>
         </div>
         <h2 className='px-[24px] text-[20px] font-bold'>Круг зачистной 125х6х22</h2>
@@ -23,9 +23,9 @@ const Item = () => {
          <h2 className='text-[20px] font-bold pl-[16px]' >48 руб.</h2>
         </div>
 
-        <div className='flex flex-row'>
+        <div className='flex flex-row mt-[8px] justify-between mx-[24px]'>
           <div >
-            <p>Количество</p>
+            <p className="text-[16px]">Количество</p>
 
               <Count />
 
