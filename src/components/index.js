@@ -6,6 +6,9 @@ import Benefits from "./Benefits"
 import Slider from "./Slider";
 import Button from "../components/UI/Button";
 import Count from "./Count"
+import CategorySliderItem from "./CategorySliderItem"
+import GridsBox from "./GridsBox"
+import CatSlider from "./CatSlider";
 
 
 
@@ -17,6 +20,9 @@ export {
     Benefits,
     Slider,
     Button,
-    Count
+    Count,
+    CategorySliderItem,
+    GridsBox,
+    CatSlider
 }
 
