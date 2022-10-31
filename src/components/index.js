@@ -8,7 +8,8 @@ import Button from "../components/UI/Button";
 import Count from "./Count"
 import CategorySliderItem from "./CategorySliderItem"
 import GridsBox from "./GridsBox"
-import CatSlider from "./CatSlider";
+import CatSlider from "./CatSlider"
+import CatalogRef from "./CatalogRef";
 
 
 
@@ -23,6 +24,7 @@ export {
     Count,
     CategorySliderItem,
     GridsBox,
-    CatSlider
+    CatSlider,
+    CatalogRef
 }
 

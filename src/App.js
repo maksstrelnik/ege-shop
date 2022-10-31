@@ -1,5 +1,5 @@
 import React from 'react'
-import { Navbar, CategoryBar, MainImg, Benefits, Slider, CategorySliderItem, GridsBox, CatSlider}  from './components/index'
+import { Navbar, CategoryBar, MainImg, Benefits, Slider, CategorySliderItem, CatSlider, CatalogRef}  from './components/index'
 import './index.css'
 import styles from './style'
 
@@ -14,7 +14,8 @@ function App() {
           <Benefits />
           <CategorySliderItem/>
           <Slider />
-          <Benefits />
+          <CatalogRef />
+          <Slider />
         </div>
       </div>
     </div>

@@ -19,6 +19,7 @@ import smBanner from "./smBanner.png"
 import search from "./search.png"
 import popItem from "./pop_item.png"
 import procent from "./procent.png"
+import builder from "./builder.png"
 
 
 export{
@@ -42,5 +43,6 @@ export{
     smBanner,
     search,
     popItem,
-    procent
+    procent,
+    builder
 }
